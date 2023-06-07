@@ -1,5 +1,11 @@
 # @napolab/typescript
 
+## 0.0.3
+
+### Patch Changes
+
+- 13218ab: update ci
+
 ## 0.0.2
 
 ### Patch Changes
