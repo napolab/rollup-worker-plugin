@@ -47,7 +47,8 @@
     "fmt:eslint": "eslint --fix .",
     "fmt:prettier": "prettier --write .",
     "type-check": "tsc --noEmit",
-    "test": "vitest"
+    "test": "vitest",
+    "publish": "changeset publish"
   },
   "author": "@naporin0624",
   "license": "MIT",
