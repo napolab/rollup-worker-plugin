@@ -1,4 +1,4 @@
-import { worker } from "@naporin0624/worker/rollup-plugin";
+import { worker } from "@napolab/worker_thread/rollup-plugin";
 import { defineConfig } from "rollup";
 import esbuild from "rollup-plugin-esbuild";
 import { externals } from "rollup-plugin-node-externals";

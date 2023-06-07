@@ -1,6 +1,6 @@
 import { parentPort } from "node:worker_threads";
 
-import { create } from "@naporin0624/worker";
+import { create } from "@napolab/worker_thread";
 
 import { sum } from "./func";
 

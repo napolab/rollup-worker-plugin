@@ -1,4 +1,4 @@
-import { execute } from "@naporin0624/worker";
+import { execute } from "@napolab/worker_thread";
 
 import path from "./test.worker";
 
