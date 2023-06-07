@@ -1,5 +1,11 @@
 # @napolab/typescript
 
+## 0.0.1
+
+### Patch Changes
+
+- d105370: change package name
+
 ## 0.0.3
 
 ### Patch Changes
