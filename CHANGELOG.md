@@ -1,5 +1,11 @@
 # @napolab/typescript
 
+## 0.0.2
+
+### Patch Changes
+
+- 4d535ac: set npm token
+
 ## 0.0.1
 
 ### Patch Changes
