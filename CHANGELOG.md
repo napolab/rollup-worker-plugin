@@ -1,5 +1,11 @@
 # @napolab/typescript
 
+## 0.0.2
+
+### Patch Changes
+
+- a142bd1: update package.json
+
 ## 0.0.1
 
 ### Patch Changes
