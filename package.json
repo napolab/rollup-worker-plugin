@@ -1,6 +1,6 @@
 {
   "name": "@naporin0624/worker",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": false,
   "type": "module",
   "main": "index.cjs",
@@ -26,13 +26,11 @@
     "index.cjs.map",
     "index.mjs",
     "index.mjs.map",
-
     "rollup-plugin.cjs",
     "rollup-plugin.cjs.map",
     "rollup-plugin.mjs",
     "rollup-plugin.mjs.map",
     "rollup-plugin.d.ts",
-
     "package.json"
   ],
   "publishConfig": {
