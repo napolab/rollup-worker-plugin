@@ -1,11 +1,11 @@
-# @naporin0624/worker
+# @napolab/worker_thread
 
 rollup + esbuild 環境で worker を使うためのライブラリ
 
 ## Install
 
 ```bash
-npm i @naporin0624/worker
+npm i @napolab/worker_thread
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm i @naporin0624/worker
 rollup.config.mjs
 
 ```js
-import { worker } from "@naporin0624/worker/rollup-plugin";
+import { worker } from "@napolab/worker_thread/rollup-plugin";
 import { defineConfig } from "rollup";
 import esbuild from "rollup-plugin-esbuild";
 import { externals } from "rollup-plugin-node-externals";
@@ -47,7 +47,7 @@ export default [config];
 src/index.ts
 
 ```ts
-import { execute } from "@naporin0624/worker";
+import { execute } from "@napolab/worker_thread";
 
 import path from "./test.worker";
 
