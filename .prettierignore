@@ -6,3 +6,15 @@ dump
 node_modules
 coverage
 .ultra.cache.json
+
+index.cjs
+index.cjs.map
+index.mjs
+index.mjs.map
+index.d.ts
+
+rollup-plugin.cjs
+rollup-plugin.cjs.map
+rollup-plugin.mjs
+rollup-plugin.mjs.map
+rollup-plugin.d.ts

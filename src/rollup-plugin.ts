@@ -1,4 +1,4 @@
-import { basename } from "node:path"
+import { basename } from "node:path";
 
 import { build } from "esbuild";
 
@@ -6,7 +6,7 @@ import type { Plugin } from "rollup";
 
 type Options = {
   extensions?: string;
-}
+};
 export const worker = (options?: Options): Plugin => {
   return {
     name: "workerPlugins",

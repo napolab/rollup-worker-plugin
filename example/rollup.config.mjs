@@ -1,15 +1,13 @@
+import { worker } from "@naporin0624/worker/rollup-plugin";
 import { defineConfig } from "rollup";
-import dts from "rollup-plugin-dts";
 import esbuild from "rollup-plugin-esbuild";
 import { externals } from "rollup-plugin-node-externals";
-import tsConfigPaths from "rollup-plugin-tsconfig-paths";
 
-const out = ".";
+const out = "dist";
 
 export const config = defineConfig({
   input: {
     index: "src/index.ts",
-    "rollup-plugin": "src/rollup-plugin.ts",
   },
   output: [
     {
@@ -25,13 +23,7 @@ export const config = defineConfig({
       sourcemap: true,
     },
   ],
-  plugins: [externals(), tsConfigPaths(), esbuild()],
+  plugins: [externals(), esbuild(), worker()],
 });
 
-export const typeConfig = defineConfig({
-  input: config.input,
-  output: { dir: out },
-  plugins: [...config.plugins, dts({ tsconfig: "./tsconfig.json" })],
-});
-
-export default [config, typeConfig];
+export default [config];

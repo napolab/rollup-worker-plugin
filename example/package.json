@@ -1,0 +1,22 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "rollup -c",
+    "prestart": "npm run build",
+    "start": "node dist/index.cjs && node dist/index.mjs"
+  },
+  "author": "@naporin0624",
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/esm": "^1.0.3",
+    "@tsconfig/node18": "^2.0.0",
+    "@tsconfig/recommended": "^1.0.2",
+    "rollup": "^3.21.3",
+    "rollup-plugin-esbuild": "^5.0.0",
+    "rollup-plugin-node-externals": "^5.1.2",
+    "@naporin0624/worker": "^0.0.3",
+    "typescript": "^5.0.4"
+  }
+}
