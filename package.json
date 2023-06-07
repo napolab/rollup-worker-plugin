@@ -31,7 +31,8 @@
     "rollup-plugin.mjs",
     "rollup-plugin.mjs.map",
     "rollup-plugin.d.ts",
-    "package.json"
+    "package.json",
+    "README.md"
   ],
   "publishConfig": {
     "access": "public"
@@ -82,5 +83,20 @@
   "volta": {
     "node": "18.16.0",
     "npm": "9.6.5"
-  }
+  },
+  "description": "rollup + esbuild 環境で worker を使うためのライブラリ",
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/napolab/rollup-worker-thread-plugin.git"
+  },
+  "keywords": [
+    "rollup"
+  ],
+  "bugs": {
+    "url": "https://github.com/napolab/rollup-worker-thread-plugin/issues"
+  },
+  "homepage": "https://github.com/napolab/rollup-worker-thread-plugin#readme"
 }
