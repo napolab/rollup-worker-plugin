@@ -51,12 +51,11 @@ import { execute } from "@napolab/worker_thread";
 
 import path from "./test.worker";
 
-
 export const main = async () => {
   const worker = execute(path)("Hello, world!");
 
   worker.on("message", (message) => {
-    console.log((message));
+    console.log(message);
   });
 };
 
@@ -73,5 +72,4 @@ import { create } from "@naporin0624/worker";
 export default create<string>((workerData) => {
   parentPort?.postMessage({ welcome: workerData });
 });
-
 ```
