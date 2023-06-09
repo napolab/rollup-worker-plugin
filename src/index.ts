@@ -11,8 +11,8 @@ export const create = <T>(callback: (workerData: T) => void): WorkerPath<T> => {
   return "" as WorkerPath<T>;
 };
 
-export const execute =
-  <T>(workerPath: WorkerPath<T>) =>
+export const init =
+  <T>(workerPath: WorkerPath<T>)  =>
   (workerData: T) => {
     const worker = new Worker(workerPath, { workerData });
 
