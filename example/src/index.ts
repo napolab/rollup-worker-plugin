@@ -1,11 +1,15 @@
-import { execute } from "@napolab/worker_thread";
+import { init } from "@napolab/worker_thread";
 
 import path from "./test.worker";
 
 export const main = async () => {
-  const worker = execute(path)("Hello, world!");
+  const worker1 = init(path)({ id: "1" });
+  const worker2 = init(path)({ id: "2" });
 
-  worker.on("message", (message) => {
+  worker1.on("message", (message) => {
+    console.log(message);
+  });
+  worker2.on("message", (message) => {
     console.log(message);
   });
 };

@@ -12,7 +12,7 @@ export const create = <T>(callback: (workerData: T) => void): WorkerPath<T> => {
 };
 
 export const init =
-  <T>(workerPath: WorkerPath<T>)  =>
+  <T>(workerPath: WorkerPath<T>) =>
   (workerData: T) => {
     const worker = new Worker(workerPath, { workerData });
 
