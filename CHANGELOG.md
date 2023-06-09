@@ -1,5 +1,11 @@
 # @napolab/typescript
 
+## 0.0.3
+
+### Patch Changes
+
+- abf5a59: change api execute -> init
+
 ## 0.0.2
 
 ### Patch Changes
